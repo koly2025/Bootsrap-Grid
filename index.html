@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Grid System</title>
+
+    <!-- ✅ Bootstrap CDN লিংক -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <style>
+        /* ✅ Grid Box Styling */
+        .box {
+            padding: 20px; /* ভিতরের জায়গা */
+            text-align: center; /* লেখা মাঝখানে আনবে */
+            color: white; /* ফন্টের রঙ সাদা */
+            font-size: 20px; /* ফন্ট সাইজ */
+            border: 1px solid white; /* বর্ডার */
+        }
+        .box1 { background-color: #17a2b8; } /* নীল ব্যাকগ্রাউন্ড */
+        .box2 { background-color: #28a745; } /* সবুজ ব্যাকগ্রাউন্ড */
+        .box3 { background-color: #ffc107; } /* হলুদ ব্যাকগ্রাউন্ড */
+        .box4 { background-color: #dc3545; } /* লাল ব্যাকগ্রাউন্ড */
+        .box5 { background-color: #6c757d; } /* ধূসর ব্যাকগ্রাউন্ড */
+        .box6 { background-color: #6610f2; } /* বেগুনি ব্যাকগ্রাউন্ড */
+    </style>
+</head>
+<body>
+
+    <!-- ✅ 12 কলামের Bootstrap Grid System -->
+    <div class="container my-5">
+        <h2 class="text-center">Bootstrap Grid System (12 কলাম)</h2>
+        <div class="row">
+            <div class="col-12 box box1">Full Width (12 কলাম)</div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 box box2">6 কলাম</div>
+            <div class="col-md-6 box box3">6 কলাম</div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 box box4">4 কলাম</div>
+            <div class="col-md-4 box box5">4 কলাম</div>
+            <div class="col-md-4 box box6">4 কলাম</div>
+        </div>
+    </div>
+
+    <!-- ✅ Responsive Grid (xs, sm, md, lg, xl, xxl) -->
+    <div class="container my-5">
+        <h2 class="text-center">Responsive Grid</h2>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3 box box1">Col 1</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 box box2">Col 2</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 box box3">Col 3</div>
+            <div class="col-sm-6 col-md-12 col-lg-3 box box4">Col 4</div>
+        </div>
+    </div>
+
+    <!-- ✅ Nesting Grid (Grid এর ভিতরে Grid) -->
+    <div class="container my-5">
+        <h2 class="text-center">Nesting Grid</h2>
+        <div class="row">
+            <div class="col-md-6 box box5">
+                Parent Col (6 কলাম)
+                <div class="row mt-2">
+                    <div class="col-6 box box1">Child 1</div>
+                    <div class="col-6 box box2">Child 2</div>
+                </div>
+            </div>
+            <div class="col-md-6 box box6">Parent Col (6 কলাম)</div>
+        </div>
+    </div>
+
+    <!-- ✅ Offset Grid (স্থান খালি রাখা) -->
+    <div class="container my-5">
+        <h2 class="text-center">Offset Grid</h2>
+        <div class="row">
+            <div class="col-md-4 offset-md-2 box box1">Offset 2 কলাম</div>
+            <div class="col-md-4 box box2">4 কলাম</div>
+        </div>
+    </div>
+
+    <!-- ✅ Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
